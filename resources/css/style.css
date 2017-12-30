@@ -1,0 +1,227 @@
+/*
+Document Structure Divs
+
+.header
+	.contact
+.wrap
+	.main
+		.experiance
+	.aside
+		.education
+		.aside
+*/
+
+#header, #wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 65%;
+	color: #333;
+}
+
+#main {
+	float: left;
+	overflow: hidden;
+	padding: 0 2em 0 0;
+	width: 60%;
+}
+
+#aside {
+	overflow: hidden;
+}
+
+#contact {
+	padding: 0 0 3em 0;
+}
+
+#contact ul{
+	color: gray;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+#contact li {
+	display: inline;
+	padding: 0 2em 0 0;
+}
+
+#contact li:before {
+	font-family: FontAwesome;
+	content: "\f0ac";
+	margin-right: .5em;
+	width: 1.4em;
+}
+
+#contact li.globe:before {
+	content: "\f0ac";
+}
+
+#contact li.envelope:before {
+	content: "\f003";
+}
+
+#contact li.phone:before {
+	content: "\f095";
+}
+
+.mbreak {
+	display: none;
+}
+
+a {
+	color: #8cb720;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.fa-angle-right {
+	color: #8cb720;
+}
+
+ul {
+	list-style-type: none;
+}
+
+section ul {
+	font-family: 'Lora', serif;
+}
+
+h1 {
+	font-size:4em;
+	font-family: 'Lora', serif;
+	margin:.5em 0 0 0;
+	line-height: 1;
+	padding-bottom: .2em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.3em;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	color: #999;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+
+h3 {
+	font-size: 1.6em;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: .5em 0 0 0;
+	line-height: 1.2;
+	font-weight: 700;
+}
+h4 {
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin:.3em 0 .5em 0;
+	line-height: 1.2;
+	font-weight: 400;
+}
+
+time, location {
+	color: #999;
+	display: inline;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.subtitle {
+	color: #999;
+	display: inline;
+	text-transform: none;
+	font-size: 1em;
+	line-height: 2;
+	padding-bottom: 1em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+time {
+	border-right: 1px solid #999;
+	margin-right: .5em;
+	padding-right: .8em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+section {
+	margin-bottom: 2.5em;
+}
+
+ul {
+	list-style:none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 1em 0;
+	line-height: 1.3;
+}
+
+header li {
+	margin: 0;
+	color: #999;
+}
+
+#experience li {
+	margin-left: 2em;
+}
+
+#skills li {
+	margin: .5em 0;
+	line-height: 1.2em;
+}
+
+#skills li .sub {
+	margin-left: 2em;
+}
+
+@media screen and (max-width: 1080px) {
+	#contact li {
+		display: block;
+		padding: 0;
+		line-height: .5em;
+	}
+
+	#wrap, #header {
+		width: 80%
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+
+	#wrap, #header {
+		width: 95%
+	}
+
+	#main {
+		float: none;
+		width: 100%;
+	}
+
+	#aside {
+		margin: 1em 0;
+		padding: 1em 0;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+		#contact li {
+		font-size: .8em;
+		line-height: 1.2em;
+	}
+
+		.mbreak {
+		display: inline;
+	}
+
+	time {
+		border-right: none;
+	}
+}
